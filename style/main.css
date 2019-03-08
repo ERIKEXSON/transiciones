@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rosybrown;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+  }
+  nav ul li a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: all 1s linear;
+}
+nav ul li a:hover{
+    background-color: red;
+    border-bottom: solid 5px white;}
+.active
+{
+    background-color:red;
+    border-bottom: solid white;
+}
+body{
+    background-color: aqua;
+}
+.pagina1>article{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto; 
+    transition: all 2s linear;
+}
+.pagina1>article:hover{
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+}
+/*pagina2*/
+.pagina2>article{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto; 
+    transition-property: width,height, background-color, border;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s, 1s, 2s;
+}
+.pagina2>article:hover{
+    width: 300px;
+    height: 300px;
+    background-color: chocolate;
+    border: solid yellow 4px;
+}
+/*pagina3*/
+.pagina3>article{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto; 
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 0s 1s;
+}
+.pagina3>article>div{
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    background-color: rebeccapurple;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;   
+    transition-property: width, height, background-color, border-radius;
+    transition-duration: 1s;
+    transition-delay: 1s, 1s, 2s, 2s; 
+}
+.pagina3>article:hover{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+.pagina3>article:hover>div{
+    width: 120px;
+    height: 120px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+/*pagina 4*/
+.pagina4>article{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto; 
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s, 2s;
+}
+.pagina4>article>div{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property:left, background-color, border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s, 4s, 4s;
+}
+.pagina4>article>nav{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property:right, background-color, border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s, 4s, 4s;
+}
+.pagina4>article:hover{
+    width: 300px;
+    height: 300px;
+    background-color: mediumvioletred;
+}
+.pagina4>article:hover>div{
+left: 50px;
+background-color: darkorange;
+border-radius: 50%;
+}
+.pagina4>article:hover>nav{
+    right: 50px;
+    background-color: darkturquoise;
+    border-radius: 50%;
+}
+/*pagina 5*/
+.pagina5>article{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto; 
+    transition-property:background-color, width, height ;
+    transition-duration: 1s ;
+    transition-delay: 0s, 1s, 2s;
+}
+.pagina5>article>div{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: top, right, border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s, 3s, 4s;
+}
+.pagina5>article>nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 5s, 6s;
+}
+.pagina5>article>footer{
+    position: absolute;
+    left: 0; 
+    bottom: 0px;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: left, bottom, border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s, 3s, 4s;
+}
+.pagina5>article:hover{
+    background-color: teal;
+    width: 320px;
+    height: 320px;
+}
+.pagina5>article:hover>div{
+top:10px;
+right: 10px;
+border-radius: 50%;
+}
+.pagina5>article:hover>footer{
+left: 10px;
+bottom: 10px;
+border-radius: 50%;
+}
+.pagina5>article:hover>nav{
+    border-radius: 50%;
+    background-color: indianred;
+}
+/*pagina 6*/
+.pagina6>article{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto; 
+    transition-property: width, height, border-top, border-right, border-bottom, border-left;
+    transition-duration: 1s ;
+    transition-delay: 0s, 0s, 1s, 2s, 3s, 4s;
+}
+.pagina6>article:hover{
+    width: 350px;
+    height: 350px;
+    border-top: solid red 5px;
+    border-right: solid red 5px;
+    border-bottom: solid red 5px;
+    border-left: solid red 5px;
+}
+.pagina6>article>div{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: top, right, border-radius;
+    transition-duration: 1s ;
+    transition-delay: 7s, 7s, 8s;
+}
+.pagina6>article>nav{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: bottom, right, border-radius;
+    transition-duration: 1s ;
+    transition-delay: 9s, 9s, 10s;
+}
+.pagina6>article>footer{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: border-radius, background-color;
+    transition-duration: 1s ;
+    transition-delay: 13s, 14s;
+}
+.pagina6>article>article{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: bottom, left, border-radius;
+    transition-duration: 1s ;
+    transition-delay: 11s, 11s, 12s;
+}
+.pagina6>article>aside{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    margin:auto; 
+    transition-property: top, left, border-radius;
+    transition-duration: 1s ;
+    transition-delay: 5s, 5s, 6s;
+}
+.pagina6>article:hover>aside{
+    top:10px;
+    left: 10px;
+    border-radius: 50%;
+}
+.pagina6>article:hover>div{
+    top:10px;
+    right: 10px;
+    border-radius: 50%;
+}
+.pagina6>article:hover>nav{
+    bottom:10px;
+    right: 10px;
+    border-radius: 50%;
+}
+.pagina6>article:hover>article{
+    bottom:10px;
+    left: 10px;
+    border-radius: 50%;
+}
+.pagina6>article:hover>footer{
+    border-radius: 50%;
+    background-color: greenyellow;
+}
